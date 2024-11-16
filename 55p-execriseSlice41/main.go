@@ -17,7 +17,6 @@ func main() {
 	fmt.Printf("the arr length is : %v and the arr is\n", len(arr))
 	fmt.Println("\t", arr)
 	fmt.Printf("\tshow me the arr's type : %T \n", arr)
-
 	for i, v := range arr {
 		fmt.Printf("now the index is %v \t and The value is %v \n", i, v)
 	}
