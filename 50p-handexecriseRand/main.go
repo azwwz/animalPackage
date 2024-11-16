@@ -7,8 +7,5 @@ import (
 
 func main() {
 	x := rand.Intn(250)
-	fmt.Println("x = ",x)
-	if condition {
-		
-	}
+	fmt.Println("x = ", x)
 }
