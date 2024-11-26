@@ -2,23 +2,24 @@ package main
 
 import "fmt"
 
-type Person struct{
+type Person struct {
 	last string
 }
 
-func (p *Person) speak(){
-	fmt.Println("My lastName: ",p.last)
+func (p *Person) speak() {
+	fmt.Println("My lastName: ", p.last)
 }
-type Human interface{
+
+type Human interface {
 	speak()
 }
 
-func saySometing(h Human){
+func saySometing(h Human) {
 	h.speak()
 }
-func main(){
-	p := Person{"xlen"}
+func main() {
+	// p := Person{"xlen"}
 	pp := &Person{"Pxlen"}
-	p.speak()
-	pp.speak()
+	// saySometing(p)
+	saySometing(pp)
 }
