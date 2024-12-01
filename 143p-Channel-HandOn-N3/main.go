@@ -19,7 +19,6 @@ func gen() <-chan int {
 		}
 		close(c)
 	}()
-
 	return c
 }
 func receive(c <-chan int) {
